@@ -3,6 +3,7 @@ import DescriptionPage from "./Pages/description";
 import StudyPage from "./Pages/study";
 import ExperiencePage from "./Pages/experience";
 import SkillsPage from "./Pages/skills";
+import ProjectPage from "./Pages/project";
 const Portofolio = () => {
   return (
     <div className="w-full h-screen">
@@ -11,6 +12,7 @@ const Portofolio = () => {
       <StudyPage />
       <ExperiencePage />
       <SkillsPage />
+      <ProjectPage />
     </div>
   );
 };
