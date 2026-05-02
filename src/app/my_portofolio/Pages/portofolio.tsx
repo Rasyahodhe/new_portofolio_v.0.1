@@ -2,12 +2,6 @@
 import { Mydata } from "@/app/data/mydata";
 import { useState } from "react";
 import ProjectPage from "./projects-page/projects";
-type dataProjectInterface = {
-  menu: {
-    id?: number;
-    name?: string;
-  }[];
-};
 
 const dataProject: dataProjectInterface = {
   menu: [

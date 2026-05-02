@@ -31,7 +31,7 @@ const ProjectPage = ({
                 : item?.description.slice(0, 60) + "..."}
               <p
                 onClick={() => tooglerShow(item?.id)}
-                className="w-[70px] cursor-pointer text-[12px] underline hover:text-blue-500 mt-2"
+                className="w-[17.5] cursor-pointer text-[12px] underline hover:text-blue-500 mt-2"
               >
                 {item?.active ? "Show Less" : "Show More"}
               </p>
