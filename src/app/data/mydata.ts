@@ -1,35 +1,3 @@
-type MydataType = {
-  blog: {
-    id: number;
-    title: string;
-    content: string;
-    createdAt: string;
-  }[];
-  projects: {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-    client: string;
-    status: "active" | "inactive";
-  }[];
-  manualBook: {
-    id: number;
-    title: string;
-    proyekyear: string;
-    client: string;
-    description: string;
-    imgmb: string;
-  }[];
-  design: {
-    id: number;
-    nameDesaina: string;
-    appUse: string;
-    imgDesign: string;
-  }[];
-};
-
 export const Mydata: MydataType = {
   blog: [
     {
@@ -72,81 +40,97 @@ export const Mydata: MydataType = {
     {
       id: 1,
       title: "MUNA DESTINASI",
+      program: "Frontend Developer",
       description:
         "Jelajahi keindahan pantai, budaya, dan kuliner pulau Muna. Temukan pengalaman tak terlupakan di surga tropis ini!",
       image: "/portofolio/munades.png",
       link: "https://github.com/Rasyahodhe/24001107_44_Lao_munaDestination_Challenge-Gold",
       client: "Tugas Binar Academy",
       status: "inactive",
+      active: false,
     },
     {
       id: 2,
       title: "SIPEJANTANPRO",
+      program: "Frontend Developer",
       description:
         "Sistem Informasi Data Perancangan Jalan dan Jembatan Provinsi dari Dinas Bina Marga dan Sumber Daya Air. Akses data, rencana, dan informasi terkait perencanaan infrastruktur jalan dan jembatan untuk mendukung pembangunan yang efektif dan berkelanjutan.",
       image: "/portofolio/sipejantan.png",
       link: "https://github.com/Rasyahodhe/Project_Sipejantanpro_v1",
       client: "Dinas Bina Marga dan Sumber Daya Air",
       status: "active",
+      active: false,
     },
     {
       id: 3,
       title: "TEMANSIBIMA",
+      program: "Frontend Developer",
       description:
         "Kami menyediakan layanan teknis terkait pengelolaan sumber daya air dan infrastruktur jalan. Temukan informasi, layanan, dan solusi untuk mendukung pembangunan berkelanjutan di provinsi kami.",
       image: "/portofolio/temansibima.png",
       link: "https://gitlab.com/all-myproject/Temansibima",
       client: "Dinas Bina Marga dan Sumber Daya Air",
       status: "active",
+      active: false,
     },
     {
       id: 4,
       title: "PENGADUAN MASYARAKAT",
+      program: "Frontend Developer",
       description:
         "Laporkan masalah, sampaikan keluhan, atau berikan masukan Anda dengan mudah dan cepat. Kami berkomitmen untuk mendengarkan dan menindaklanjuti setiap pengaduan demi pelayanan yang lebih baik.",
       image: "/portofolio/pgm.png",
       link: "https://github.com/orgs/Binar-Pengaduan-Masyarakat/repositories",
       client: "Tugas Binar Academy",
       status: "inactive",
+      active: false,
     },
     {
       id: 5,
       title: "SATU PETA SULTRA",
+      program: "Frontend Developer",
       description: "Project terbaru dengan fitur dan desain menarik.",
       image: "/portofolio/satupeta.png",
       link: "",
       client: "Just for fun",
       status: "inactive",
+      active: false,
     },
     {
       id: 6,
       title: "PROFIL",
+      program: "Frontend Developer",
       description:
         "Projek ini dibangun untuk pribadi si programmer untuk sebagai informasi tentang apa saja keahlian dan kemampuan saya.",
       image: "/portofolio/porto.png",
       link: "",
       client: "Just for fun",
       status: "active",
+      active: false,
     },
     {
       id: 7,
       title: "DURAWATER",
+      program: "Frontend Developer",
       description:
         "Projek ini dibangun hanya untuk latihan saja, atau untuk menampilkan keahlian saya tentang HTML dan CSS, website ini berisi tentang pelayanan penanganan ODGJ",
       image: "/portofolio/durawatercare.PNG",
       link: "",
       client: "Just for fun",
       status: "inactive",
+      active: false,
     },
     {
       id: 8,
       title: "SENTRAKI",
+      program: "Frontend Developer",
       description:
         "Projek ini dibangun hanya untuk latihan saja, atau untuk menampilkan keahlian saya tentang HTML dan CSS, website ini berisi tentang perihal kekayaan intelektual",
       image: "/portofolio/sentraki.PNG",
       link: "",
       client: "Just for fun",
       status: "inactive",
+      active: false,
     },
   ],
   manualBook: [
@@ -181,19 +165,19 @@ export const Mydata: MydataType = {
   design: [
     {
       id: 1,
-      nameDesaina: "Poster Promo Produk",
+      nameDesign: "Poster Promo Produk",
       appUse: "canva",
       imgDesign: "",
     },
     {
       id: 2,
-      nameDesaina: "Produk Baru",
+      nameDesign: "Produk Baru",
       appUse: "Photoshop",
       imgDesign: "",
     },
     {
       id: 3,
-      nameDesaina: "Website Tambang  ",
+      nameDesign: "Website Tambang  ",
       appUse: "Figma",
       imgDesign: "",
     },

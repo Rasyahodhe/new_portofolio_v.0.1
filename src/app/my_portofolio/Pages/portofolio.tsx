@@ -1,6 +1,7 @@
 "use client";
-import Image from "next/image";
 import { Mydata } from "@/app/data/mydata";
+import { useState } from "react";
+import ProjectPage from "./projects-page/projects";
 type dataProjectInterface = {
   menu: {
     id?: number;
@@ -33,7 +34,19 @@ const dataProject: dataProjectInterface = {
   ],
 };
 
-const ProjectPage = () => {
+const PortofolioPage = () => {
+  const [projects, setprojects] = useState(Mydata.projects);
+
+  const tooglerShow = (id: number) => {
+    const update = projects.map((project: ProjectsType) => {
+      const { id: projectId } = project;
+      if (projectId === id) {
+        return { ...project, active: !project.active };
+      }
+      return project;
+    });
+    setprojects(update);
+  };
   return (
     <div className="min-h-screen h-auto text-white md:bg-gray-900">
       <div className="container mx-auto pt-5">
@@ -51,29 +64,10 @@ const ProjectPage = () => {
             ))}
           </ul>
         </div>
-        <div className="mt-5 grid grid-cols-4">
-          {Mydata.projects.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col gap-2 items-center hover:bg-gray-300 p-3 hover:text-black transition-all duration-300 ease-in-out"
-            >
-              <Image
-                src={item?.image}
-                alt="portofolio"
-                width={400}
-                height={400}
-                className="rounded-xl transition-all duration-300 ease-in-out"
-              />
-              <h3 className="w-full font-bold">{item?.title}</h3>
-              <p className="w-full text-sm ">{item?.client}</p>
-              <p className="w-full text-sm ">{item?.description}</p>
-              <p className="w-full text-sm ">{item?.status}</p>
-            </div>
-          ))}
-        </div>
+        <ProjectPage projects={projects} tooglerShow={tooglerShow} />
       </div>
     </div>
   );
 };
 
-export default ProjectPage;
+export default PortofolioPage;
